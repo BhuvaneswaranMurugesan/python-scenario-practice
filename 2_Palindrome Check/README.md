@@ -1,32 +1,35 @@
-🧠 Palindrome Check
+## 🧠 Palindrome Check
 
 You are given a string. Your task is to determine whether it is a palindrome — meaning it reads the same forwards and backwards — while ignoring spaces and letter case.
 
-For example:
+## Examples
 
-"Race car" → Palindrome
+- "Race car" → Palindrome
+- "Data Analytics" → Not a palindrome
 
-"Data Analytics" → Not a palindrome
+Your function should return a DataFrame with a single column named `is_palindrome` containing a boolean value (`True` or `False`).
 
-Your function should return a DataFrame with a single column named is_palindrome containing a boolean value (True or False).
-🦄 Assumptions
+## 🦄 Assumptions
 
-    Input DataFrame contains one column: text.
+- Input DataFrame contains one column: `text`.
+- Palindrome check must be case-insensitive and ignore spaces.
+- Return a DataFrame with one row and one column: `is_palindrome`.
+- Only alphabetic characters and spaces are considered (ignore punctuation).
 
-    Palindrome check must be case-insensitive and ignore spaces.
+## 💡Hint
 
-    Return a DataFrame with one row and one column: is_palindrome.
+- Convert the string to lowercase and remove spaces before checking.
+- You can reverse a string using slicing (`[::-1]`).
+- Compare the cleaned string with its reversed version.
 
-    Only alphabetic characters and spaces are considered (ignore punctuation).
+## 📊 Dataset Preview
 
-💡 Hint
+![alt text](image.png)
 
-    Convert the string to lowercase and remove spaces before checking.
+## 🔍 Sample Output Preview (for reference)
 
-    You can reverse a string using slicing ([::-1]).
+⚠️ Note: This is only an illustrative preview — actual output may differ.
 
-    Compare the cleaned string with its reversed version.
-
-📊 Dataset Preview:
+![alt text](image-1.png)
 
 
